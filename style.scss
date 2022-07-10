@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #f30000;
+}
+
+body {
+    position: relative;
+    background: linear-gradient(90deg, #52C234 0%, rgba(6, 23, 0, 0.94) 100%);
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+.title-section {
+    margin-top: 0.8em;
+    display: flex;
+    justify-content: center;
+    .container {
+        display: inline-block;
+        
+        .title-text {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+            font-size: 1.8em;
+    
+            span {
+                color: var(--primary-color);
+            }
+        }
+    }    
+}
+
+.task-input-section {
+    display: flex;
+
+    .container{
+        justify-content: center;
+        margin-top: 20em;
+        width: 40%;
+        min-width: 800px;
+        position: relative;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        padding: 30px 40px;
+    }
+    
+    #newtask{
+        justify-content: center;
+        text-align: center;
+        
+        position: relative;
+        background-color: #ffffff;
+        padding: 2em 2em;
+        border-radius: 10px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+
+        input{
+            width: 90%;
+            height: 30px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            border: 2px solid #d1d3d4;
+            padding: 12px;
+            color: #111111;
+            font-weight: 500;
+            position: relative;
+            border-radius: 5px;
+            margin-bottom: 1em;
+        }
+
+        input:focus{
+            outline: none;
+            border-color: #8052ec;
+        }
+
+        button {
+            position: relative;
+            width: 20%;
+            height: 45px;
+            border-radius: 30px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            background-color: #8052ec;
+            border: none;
+            color: #ffffff;
+            cursor: pointer;
+            margin: 0;
+        }
+
+        label {
+            display: block;
+            margin-top: 1em;
+        }
+    }
+
+    
+    #tasks-section{
+        justify-content: center;
+        text-align: center;
+        margin-top: 60px;
+        position: relative;
+        background-color: #ffffff;
+        padding: 1em 1em;
+        border-radius: 10px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        height: 2em;
+
+        .clear-task-button [type="submit"] {
+            float: left;
+            position: relative;
+            width: 60%;
+            height: 40px;
+            border-radius: 30px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            background-color: #df510a;
+            border: none;
+            color: #ffffff;
+            cursor: pointer;
+            margin: 0;
+        }
+
+        .remaining-task-stat {
+            float: right;
+            padding-top: 0.5em;
+            position: relative;
+            width: 25%;
+            height: 40px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            border: none;
+            color: #ffffff;
+            margin: 0;
+            cursor: default;
+
+            .title-text {
+                text-decoration: none;
+                color: #111111;
+                font-weight: bolder;
+                cursor: default;
+            }
+        }
+
+
+    }
+}
+
+.main-tasks {
+    background-color: #ffffff;
+    padding: 1em 1em;
+    margin-top: 90px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 95%;
+    position: relative;
+
+}
+
+.task{
+    background-color: #ffffff;
+    height: 50px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #d1d3d4;
+    cursor: pointer;
+}
+
+.task span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+.button-area {
+
+    button {
+        float: right;
+        margin: 1em;
+        background-color: #8052ec;
+        color: #ffffff;
+        height: 5vh;
+        width: 40px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
+}
+
+.hidden-details {
+    display: none;
+}
